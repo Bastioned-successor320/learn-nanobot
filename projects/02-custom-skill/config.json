@@ -1,0 +1,18 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "max_tokens": 8192,
+      "temperature": 0.3
+    }
+  },
+  "providers": {
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}"
+    }
+  },
+  "skills": {
+    "path": "./skills"
+  }
+}

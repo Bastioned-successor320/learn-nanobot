@@ -1,0 +1,27 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "max_tokens": 4096,
+      "temperature": 0.7
+    }
+  },
+  "providers": {
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}"
+    }
+  },
+  "mcp_servers": {
+    "weather": {
+      "command": "python",
+      "args": ["weather_server.py"],
+      "description": "天气查询服务，提供城市天气查询和对比功能"
+    },
+    "todo": {
+      "command": "python",
+      "args": ["todo_server.py"],
+      "description": "待办事项管理服务，支持增删改查"
+    }
+  }
+}

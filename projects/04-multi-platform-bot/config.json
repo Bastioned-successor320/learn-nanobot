@@ -1,0 +1,31 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "max_tokens": 4096,
+      "temperature": 0.7
+    }
+  },
+  "providers": {
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "bot_token": "${TELEGRAM_BOT_TOKEN}",
+      "allowed_users": [],
+      "parse_mode": "Markdown"
+    },
+    "feishu": {
+      "app_id": "${FEISHU_APP_ID}",
+      "app_secret": "${FEISHU_APP_SECRET}",
+      "verification_token": "${FEISHU_VERIFICATION_TOKEN}",
+      "encrypt_key": "${FEISHU_ENCRYPT_KEY}"
+    }
+  },
+  "skills": {
+    "path": "./skills"
+  }
+}
