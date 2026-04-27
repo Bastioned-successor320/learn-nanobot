@@ -7,28 +7,27 @@
 ```
 
 <p align="center">
-  <strong>🤖 面向小白的面试导向 Nanobot + MiniMind 学习指南</strong>
+  <strong>面向小白的面试导向 Nanobot 学习指南</strong>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
   <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/HKUDS-nanobot-orange.svg" alt="HKUDS/nanobot"></a>
   <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" alt="GitHub Stars"></a>
-  <a href="https://github.com/jingyaogong/minimind"><img src="https://img.shields.io/badge/MiniMind-LLM-green.svg" alt="MiniMind"></a>
 </p>
 
 ---
 
 ## 项目简介
 
-本项目是一份**面向零基础求职者**的 AI Agent 学习指南，以香港大学开源的超轻量级 AI Agent 框架 **[HKUDS/nanobot](https://github.com/HKUDS/nanobot)**（37K+ Stars）为核心，结合 **[MiniMind](https://github.com/jingyaogong/minimind)** 大语言模型项目，帮助你：
+本项目是一份**面向零基础求职者**的 AI Agent 学习指南，以香港大学开源的超轻量级 AI Agent 框架 **[HKUDS/nanobot](https://github.com/HKUDS/nanobot)**（37K+ Stars）为核心，帮助你：
 
 - **彻底理解** AI Agent 的核心概念与设计思想
 - **深入掌握** Nanobot 源码架构与实现细节
 - **熟练运用** MCP 协议、记忆系统、技能系统等关键技术
 - **从容应对** AI Agent 方向的技术面试
 
-> 💡 **为什么选择 Nanobot？** 仅 4000 行 Python 代码，却涵盖了工业级 Agent 框架的所有核心设计——这是面试中最好的"以小见大"素材。
+> **为什么选择 Nanobot？** 仅 4000 行 Python 代码，却涵盖了工业级 Agent 框架的所有核心设计——这是面试中最好的"以小见大"素材。
 
 ---
 
@@ -42,7 +41,7 @@
 │  ┌──────────┐      ┌──────────┐      ┌─────────┐  ┌─────────┐ │
 │  │ 基础概念  │ ──→  │ 动手实践  │ ──→  │ 项目实战 │→ │ 面试冲刺 │ │
 │  └──────────┘      └──────────┘      └─────────┘  └─────────┘ │
-│  ·什么是Agent       ·安装配置          ·接入MiniMind  ·八股文   │
+│  ·什么是Agent       ·安装配置          ·Nanobot实战  ·八股文   │
 │  ·Nanobot概览       ·记忆系统          ·多平台部署    ·简历模板 │
 │  ·架构深入          ·技能与工具        ·安全与部署    ·STAR话术 │
 │  ·源码走读          ·MCP协议实践       ·子Agent       ·市场分析 │
@@ -79,7 +78,7 @@
 | 章节 | 内容 | 预计时间 |
 |------|------|----------|
 | [11 - 安全与部署](docs/11-security-and-deploy/README.md) | 安全策略、Docker 部署、生产环境 | 2 小时 |
-| [12 - MiniMind 完整指南](docs/12-minimind-complete-guide/README.md) | MiniMind 训练、微调、接入 Nanobot | 4 小时 |
+| [12 - Nanobot 实战项目](docs/12-nanobot-real-projects/README.md) | 运维助手、客服Bot、MCP Server 开发 | 4 小时 |
 
 ### Phase 4：面试冲刺
 
@@ -98,7 +97,7 @@
 ### 1. 克隆本仓库
 
 ```bash
-git clone https://github.com/your-username/learn-nanobot.git
+git clone https://github.com/bcefghj/learn-nanobot.git
 cd learn-nanobot
 ```
 
@@ -122,12 +121,12 @@ cd learn-nanobot
 learn-nanobot/
 ├── README.md                          # 本文件
 ├── LICENSE                            # MIT 许可证
-├── assets/                            # 图片资源
-├── comics/                            # 漫画学习素材
+├── comics/                            # 哆啦A梦风格漫画学习素材
 ├── projects/                          # 实战项目代码
-│   ├── basic-agent/                   # 基础 Agent 示例
-│   ├── memory-demo/                   # 记忆系统 Demo
-│   └── mcp-server/                    # MCP Server 示例
+│   ├── 01-hello-nanobot/              # 基础 Agent 示例
+│   ├── 02-custom-skill/               # 自定义 Skill 示例
+│   ├── 03-mcp-server/                 # MCP Server 示例
+│   └── 04-multi-platform-bot/         # 多平台 Bot 示例
 └── docs/                              # 文档目录
     ├── 01-what-is-agent/              # 什么是 AI Agent
     ├── 02-nanobot-overview/           # Nanobot 项目概览
@@ -140,7 +139,7 @@ learn-nanobot/
     ├── 09-multi-platform/            # 多平台接入
     ├── 10-subagent-and-cron/         # 子Agent与定时任务
     ├── 11-security-and-deploy/       # 安全与部署
-    ├── 12-minimind-complete-guide/   # MiniMind 完整指南
+    ├── 12-nanobot-real-projects/     # Nanobot 实战项目
     ├── 13-interview-bagua/           # 面试八股文
     ├── 14-job-market-analysis/       # 就业市场分析
     ├── 15-resume-template/           # 简历模板
@@ -152,7 +151,7 @@ learn-nanobot/
 
 ## Star History
 
-如果这个项目对你有帮助，请给一个 Star ⭐
+如果这个项目对你有帮助，请给一个 Star
 
 你的 Star 是我持续更新的动力！
 
@@ -161,7 +160,6 @@ learn-nanobot/
 ## 参考项目
 
 - [HKUDS/nanobot](https://github.com/HKUDS/nanobot) - 超轻量级 AI Agent 框架（37K+ Stars）
-- [jingyaogong/minimind](https://github.com/jingyaogong/minimind) - 极简大语言模型项目
 
 ---
 
@@ -169,4 +167,4 @@ learn-nanobot/
 
 本项目采用 [MIT License](LICENSE) 开源。
 
-学习内容仅供参考，Nanobot 和 MiniMind 的版权归原作者所有。
+学习内容仅供参考，Nanobot 的版权归原作者所有。

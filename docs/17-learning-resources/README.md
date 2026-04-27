@@ -54,14 +54,13 @@
 
 | 仓库 | Stars | 定位 | 推荐理由 |
 |------|-------|------|---------|
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 45K+ | 从零训练小型 LLM | 本项目的模型训练学习对象，教学质量极高 |
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | 38K+ | 最简 GPT 实现 | Karpathy 出品，极致简洁的 GPT 训练代码 |
 | [karpathy/llm.c](https://github.com/karpathy/llm.c) | 25K+ | C 语言 LLM 训练 | 理解 LLM 训练的底层实现 |
 | [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) | 40K+ | LLM 微调工具箱 | 一站式微调框架，支持 100+ 模型 |
 | [huggingface/transformers](https://github.com/huggingface/transformers) | 135K+ | 模型库标准 | 最主流的预训练模型库和推理框架 |
 | [huggingface/trl](https://github.com/huggingface/trl) | 10K+ | RLHF/DPO 训练 | HuggingFace 官方的对齐训练工具 |
 
-**学习建议**：先跟 MiniMind 走完全流程，再用 LLaMA-Factory 在开源大模型上做微调实践。
+**学习建议**：先用 nanoGPT 理解 GPT 核心原理，再用 LLaMA-Factory 在开源大模型上做微调实践。
 
 ---
 
@@ -135,9 +134,9 @@
 
 ## 三、DeepWiki 文档链接
 
-DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 MiniMind 都有系统性的文档：
+DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 有系统性的文档：
 
-### 3.1 Nanobot DeepWiki
+### 3.1 Nanobot DeepWiki 架构文档
 
 - [项目概览与架构](https://deepwiki.com/HKUDS/nanobot)
 - [AgentLoop 详解](https://deepwiki.com/HKUDS/nanobot/agent-loop)
@@ -150,15 +149,18 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 - [配置系统](https://deepwiki.com/HKUDS/nanobot/configuration)
 - [Skills 系统](https://deepwiki.com/HKUDS/nanobot/skills)
 
-### 3.2 MiniMind DeepWiki
+### 3.2 MCP 生态资源
 
-- [项目概览](https://deepwiki.com/jingyaogong/minimind)
-- [模型架构](https://deepwiki.com/jingyaogong/minimind/architecture)
-- [Pretrain 预训练](https://deepwiki.com/jingyaogong/minimind/pretrain)
-- [SFT 监督微调](https://deepwiki.com/jingyaogong/minimind/sft)
-- [LoRA 微调](https://deepwiki.com/jingyaogong/minimind/lora)
-- [DPO 偏好对齐](https://deepwiki.com/jingyaogong/minimind/dpo)
-- [MoE 混合专家](https://deepwiki.com/jingyaogong/minimind/moe)
+- [MCP 协议规范文档](https://spec.modelcontextprotocol.io/)
+- [MCP Python SDK 文档](https://github.com/modelcontextprotocol/python-sdk)
+- [MCP Inspector 调试工具](https://github.com/modelcontextprotocol/inspector)
+- [Awesome MCP Servers 社区精选](https://github.com/punkpeye/awesome-mcp-servers)
+
+### 3.3 Agent 框架对比资源
+
+- [LangChain DeepWiki](https://deepwiki.com/langchain-ai/langchain)
+- [AutoGen DeepWiki](https://deepwiki.com/microsoft/autogen)
+- [CrewAI DeepWiki](https://deepwiki.com/crewAIInc/crewAI)
 
 > 注：DeepWiki 的 URL 可能会更新，如果链接失效请直接在 deepwiki.com 搜索项目名。
 
@@ -232,7 +234,7 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 | 动手学深度学习 (d2l) | B站/课程网站 | 李沐团队 | 系统性的深度学习入门 |
 | Neural Networks: Zero to Hero | YouTube | Andrej Karpathy | 从零实现 GPT 的最佳教程 |
 | Let's build GPT | YouTube | Andrej Karpathy | 手把手实现 GPT 的经典视频 |
-| MiniMind 项目讲解 | B站 | 项目作者 | 配套本项目的训练实战讲解 |
+| Nanobot Agent 框架源码讲解 | B站 | 技术博主 | Agent 框架设计思想和源码分析 |
 | 3Blue1Brown 深度学习系列 | YouTube/B站 | Grant Sanderson | 最直观的数学可视化讲解 |
 
 ### 5.2 Agent 与 LLM 应用
@@ -265,7 +267,7 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 | Nanobot Issues | 问题反馈和功能讨论 | 关注 bug 修复和新 feature 讨论 |
 | Nanobot Discussions | 社区交流 | 可以提问和分享经验 |
 | MCP specification Issues | 协议讨论 | 跟踪 MCP 协议的演进方向 |
-| MiniMind Issues | 训练问题交流 | 遇到训练问题可以搜索已有 issue |
+| Awesome MCP Servers | MCP 工具集合 | 发现优质 MCP Server 和贡献自己的工具 |
 
 ### 6.2 社交平台
 
@@ -350,7 +352,7 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 | Day 2 | 阅读第 3 章（架构深度解析），画出 Nanobot 架构图 | 架构笔记 |
 | Day 3 | 动手安装 Nanobot（第 6 章），跑通基本对话 | 成功运行 Nanobot |
 | Day 4 | 阅读 Transformer 入门博客 + 看 3Blue1Brown 视频 | 理解注意力机制 |
-| Day 5 | 阅读第 12 章 MiniMind 完全指南的架构部分 | 理解 Transformer 架构组件 |
+| Day 5 | 阅读 Transformer 相关论文和博客，理解 GQA/RoPE/RMSNorm | 理解 Transformer 架构组件 |
 | Day 6-7 | 阅读第 5 章（MCP 协议），跑通一个 MCP Server 示例 | 理解 MCP 基本概念 |
 
 #### 第 2 周：源码研读与 MCP 实践
@@ -366,8 +368,8 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 
 | 天 | 学习内容 | 产出 |
 |----|---------|------|
-| Day 15-16 | 跟着 MiniMind 完成模型架构实现 + Pretrain | 理解训练流程 |
-| Day 17-18 | 完成 SFT + LoRA 训练 | 理解微调原理 |
+| Day 15-16 | 开发 2 个自定义 MCP Server（数据库查询 + 文档检索） | 掌握 MCP 开发实践 |
+| Day 17-18 | 基于 Nanobot 搭建多平台 AI 助手（飞书/Web 接入） | 理解 Channel 适配器模式 |
 | Day 19-20 | 用 LangChain + ChromaDB 搭建简单 RAG 系统 | 可运行的 RAG demo |
 | Day 21 | 阅读第 7 章（记忆系统）和第 8 章（Skills 和工具） | 深化 Agent 理解 |
 
@@ -399,12 +401,12 @@ DeepWiki 是基于 AI 自动生成的开源项目文档平台，对 Nanobot 和 
 - 开发 2 个自定义 MCP Server
 - 学习第 7-10 章（记忆、工具、多平台、子 Agent）
 
-#### 第 5-6 周：模型原理与训练实践
+#### 第 5-6 周：模型原理与 MCP 深入实践
 
 - 阅读 Attention Is All You Need 论文（配合视频讲解）
-- 跟着 MiniMind 完成全流程训练（Pretrain → SFT → LoRA → DPO）
-- 阅读 LoRA 和 DPO 论文
-- 做 GQA vs MHA 对比实验
+- 阅读 LoRA 和 DPO 论文，理解大模型训练和对齐原理
+- 深入开发 3-5 个 MCP Server，覆盖不同业务场景
+- 研究工具描述优化策略，提升工具调用准确率
 
 #### 第 7 周：RAG 与系统设计
 

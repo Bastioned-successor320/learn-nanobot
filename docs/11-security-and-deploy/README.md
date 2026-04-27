@@ -1132,4 +1132,4 @@ docker-compose logs -f nanobot
 
 ---
 
-> **下一章**：[12 - MiniMind 完整指南](../12-minimind-complete-guide/README.md) —— 使用 MiniMind 训练自己的大语言模型并接入 Nanobot
+> **下一章**：[12 - Nanobot 实战项目](../12-nanobot-real-projects/README.md) —— 通过实战项目深入掌握 Nanobot 的高级用法
